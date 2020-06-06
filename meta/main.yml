@@ -1,0 +1,32 @@
+---
+galaxy_info:
+  role_name: lazydocker
+  author: Ali Muhammad
+  description: Installs/Uninstalls 'lazydocker', which is the lazier way to manage everything docker.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 7
+        - 8
+
+  galaxy_tags:
+    - lazydocker
+    - system
+    - os
+    - managedocker
+    - docker
+    - containerization

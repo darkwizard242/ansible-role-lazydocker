@@ -1,0 +1,10 @@
+---
+# tasks file for lazydocker
+
+- name: "Downloading and extracting {{ lazydocker_app }} {{ lazydocker_version }} on Debian based systems."
+  unarchive:
+    src: "{{ lazydocker_dl_url }}"
+    dest: "{{ lazydocker_bin_path }}"
+    extra_opts:
+      - lazydocker
+    remote_src: yes
