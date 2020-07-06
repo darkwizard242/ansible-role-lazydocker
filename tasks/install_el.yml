@@ -1,7 +1,7 @@
 ---
-# tasks file for lazydocker
+# tasks file for lazydocker | EL Family
 
-- name: "Downloading and extracting {{ lazydocker_app }} {{ lazydocker_version }} on EL based systems."
+- name: EL Family | Downloading and extracting {{ lazydocker_app }} {{ lazydocker_version }}
   unarchive:
     src: "{{ lazydocker_dl_url }}"
     dest: "{{ lazydocker_bin_path }}"

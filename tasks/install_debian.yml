@@ -1,7 +1,7 @@
 ---
-# tasks file for lazydocker
+# tasks file for lazydocker | Debian/Ubuntu Family
 
-- name: "Downloading and extracting {{ lazydocker_app }} {{ lazydocker_version }} on Debian based systems."
+- name: Debian/Ubuntu Family | Downloading and extracting {{ lazydocker_app }} {{ lazydocker_version }}
   unarchive:
     src: "{{ lazydocker_dl_url }}"
     dest: "{{ lazydocker_bin_path }}"
