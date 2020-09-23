@@ -20,7 +20,6 @@ env:
     - DISTRO: ubuntu-16.04
     - DISTRO: debian-buster
     - DISTRO: debian-stretch
-    - DISTRO: debian-jessie
 
 addons:
   sonarcloud:
