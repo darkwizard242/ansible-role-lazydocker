@@ -16,7 +16,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 lazydocker_app: lazydocker
-lazydocker_version: 0.9
+lazydocker_version: 0.10
 lazydocker_dl_url: https://github.com/jesseduffield/{{ lazydocker_app }}/releases/download/v{{ lazydocker_version }}/{{ lazydocker_app }}_{{ lazydocker_version }}_{{ ansible_system }}_{{ ansible_architecture }}.tar.gz
 lazydocker_bin_path: /usr/local/bin
 ```
@@ -26,7 +26,7 @@ lazydocker_bin_path: /usr/local/bin
 Variable            | Value (default)                                                                                                                                                                                          | Description
 ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------
 lazydocker_app      | lazydocker                                                                                                                                                                                               | Defines the app to install i.e. **lazydocker**
-lazydocker_version  | 0.9                                                                                                                                                                                                      | Defined to dynamically fetch the desired version to install. Defaults to: **0.9**
+lazydocker_version  | 0.10                                                                                                                                                                                                     | Defined to dynamically fetch the desired version to install. Defaults to: **0.10**
 lazydocker_dl_url   | <https://github.com/jesseduffield/{{> lazydocker_app }}/releases/download/v{{ lazydocker_version }}/{{ lazydocker_app }}_{{ lazydocker_version }}_{{ ansible_system }}_{{ ansible_architecture }}.tar.gz | Defines URL to download the lazydocker binary from.
 lazydocker_bin_path | /usr/local/bin                                                                                                                                                                                           | Defined to dynamically set the appropriate path to store lazydocker binary into. Defaults to (as generally available on any user's PATH): **/usr/local/bin**
 
