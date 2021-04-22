@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: lazydocker
-  author: Ali Muhammad
+  author: darkwizard242
   description: Installs/Uninstalls 'lazydocker', which is the lazier way to manage everything docker.
   company: none
   license: MIT
