@@ -3,3 +3,5 @@
   hosts: all
   roles:
     - role: darkwizard242.lazydocker
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
