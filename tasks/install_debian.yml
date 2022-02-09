@@ -8,3 +8,6 @@
     extra_opts:
       - lazydocker
     remote_src: yes
+    owner: "{{ lazydocker_file_owner }}"
+    group: "{{ lazydocker_file_group }}"
+    mode: "{{ lazydocker_file_mode }}"
