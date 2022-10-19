@@ -2,7 +2,7 @@
 # tasks file for lazydocker | EL Family
 
 - name: EL Family | Downloading and extracting {{ lazydocker_app }} {{ lazydocker_version }}
-  unarchive:
+  ansible.builtin.unarchive:
     src: "{{ lazydocker_dl_url }}"
     dest: "{{ lazydocker_bin_path }}"
     extra_opts:
