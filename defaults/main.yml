@@ -2,7 +2,7 @@
 # defaults file for lazydocker
 
 lazydocker_app: lazydocker
-lazydocker_version: '0.20.0'
+lazydocker_version: '0.21.0'
 lazydocker_dl_url: https://github.com/jesseduffield/{{ lazydocker_app }}/releases/download/v{{ lazydocker_version }}/{{ lazydocker_app }}_{{ lazydocker_version }}_{{ ansible_system }}_{{ ansible_architecture }}.tar.gz
 lazydocker_bin_path: /usr/local/bin
 lazydocker_file_owner: root
