@@ -5,6 +5,10 @@
   ansible.builtin.import_tasks: install_debian.yml
   when: ansible_os_family == "Debian"
 
+- name: Import install_debian.yml if OS family is Debian and Architecture is ARMv8 (AArch64)
+  ansible.builtin.import_tasks: install_debian_aarch64.yml
+  when: (ansible_os_family == "Debian") and (ansible_architecture == "aarch64")
+
 - name: Import install_el.yml if OS family is EL
   ansible.builtin.import_tasks: install_el.yml
   when: ansible_os_family == "RedHat"
