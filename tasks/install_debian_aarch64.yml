@@ -1,0 +1,13 @@
+---
+# tasks file for lazydocker | Debian/Ubuntu Family and Architecture is ARMv8 (aarch64)
+
+- name: Debian/Ubuntu ARMv8 (Aarch64) Architecture | Download and extracting {{ lazydocker_app }} {{ lazydocker_version }}
+  ansible.builtin.unarchive:
+    src: "{{ lazydocker_dl_url_aarch64 }}"
+    dest: "{{ lazydocker_bin_path }}"
+    extra_opts:
+      - lazydocker
+    remote_src: yes
+    owner: "{{ lazydocker_file_owner }}"
+    group: "{{ lazydocker_file_group }}"
+    mode: "{{ lazydocker_file_mode }}"
