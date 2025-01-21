@@ -31,6 +31,10 @@ lazydocker_bin_path: /usr/local/bin
 lazydocker_file_owner: root
 lazydocker_file_group: root
 lazydocker_file_mode: '0755'
+lazydocker_config_src: vars/lazydocker-config.yml
+lazydocker_users: 
+  - user1
+  - user2
 ```
 
 ### Variables table:
@@ -45,6 +49,8 @@ lazydocker_bin_path         | Defined to dynamically set the appropriate path to
 lazydocker_file_owner       | Owner for the binary file of lazydocker.
 lazydocker_file_group       | Group for the binary file of lazydocker.
 lazydocker_file_mode        | Mode for the binary file of lazydocker.
+lazydocker_config_src       | Path to the config.yml file which will be installed for each user.
+lazydocker_users            | Users to install lazydocker config.yml file for.
 
 ## Dependencies
 
