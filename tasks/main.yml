@@ -8,3 +8,10 @@
 - name: Import install_el.yml if OS family is EL
   ansible.builtin.import_tasks: install_el.yml
   when: ansible_os_family == "RedHat"
+
+- name: Import install_config.yml if config.yml is available
+  ansible.builtin.import_tasks: install_config.yml
+  when:
+    - lazydocker_config_src is defined
+    - lazydocker_users is defined
+    - lazydocker_users | length > 0

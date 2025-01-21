@@ -1,0 +1,18 @@
+- name: Ensure lazydocker config directory exists
+  ansible.builtin.file:
+    path: "{{ '~' + item + '/.config/jesseduffield/lazydocker' | expanduser }}"
+    state: directory
+    owner: "{{ item }}"
+    group: "{{ item }}"
+    mode: '0755'
+  with_items: "{{ lazydocker_users }}"
+
+- name: Copy lazydocker config to user home directories
+  ansible.builtin.copy:
+    src: "{{ lazydocker_config_src }}"
+    dest: "{{ '~' + item + '/.config/jesseduffield/lazydocker/config.yml' | expanduser }}"
+    owner: "{{ item }}"
+    group: "{{ item }}"
+    mode: '0644'
+    force: yes
+  with_items: "{{ lazydocker_users }}"
