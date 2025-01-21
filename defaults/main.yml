@@ -22,7 +22,7 @@ lazydocker_file_mode: '0755'
 lazydocker_config_src:
 # By default, no users will receive the config (undefined)
 # Example:
-# users:
+# lazydocker_users:
 #   - user1
 #   - user2
 lazydocker_users: []
