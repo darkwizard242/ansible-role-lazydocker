@@ -17,3 +17,12 @@ lazydocker_bin_path: /usr/local/bin
 lazydocker_file_owner: root
 lazydocker_file_group: root
 lazydocker_file_mode: '0755'
+# By default, no config file will be copied (undefined)
+# Example: lazydocker_config_src: /path/to/your/config.yml
+lazydocker_config_src:
+# By default, no users will receive the config (undefined)
+# Example:
+# lazydocker_users:
+#   - user1
+#   - user2
+lazydocker_users: []
