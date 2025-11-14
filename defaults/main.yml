@@ -2,7 +2,7 @@
 # defaults file for lazydocker
 
 lazydocker_app: lazydocker
-lazydocker_version: '0.24.1'
+lazydocker_version: '0.24.2'
 lazydocker_architecture_map:
   amd64: x86_64
   arm: arm64
