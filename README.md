@@ -16,7 +16,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 lazydocker_app: lazydocker
-lazydocker_version: '0.24.2'
+lazydocker_version: '0.24.3'
 lazydocker_architecture_map:
   amd64: x86_64
   arm: arm64
@@ -42,7 +42,7 @@ lazydocker_users:
 Variable                    | Description
 --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------
 lazydocker_app              | Defines the app to install i.e. **lazydocker**
-lazydocker_version          | Defined to dynamically fetch the desired version to install. Defaults to: **0.24.2**
+lazydocker_version          | Defined to dynamically fetch the desired version to install. Defaults to: **0.24.3**
 lazydocker_architecture_map | Defined to dynamically fetch the processor architecture and assign relevant value
 lazydocker_dl_url           | Defines URL to download the lazydocker binary from.
 lazydocker_bin_path         | Defined to dynamically set the appropriate path to store lazydocker binary into. Defaults to (as generally available on any user's PATH): **/usr/local/bin**
